@@ -9,15 +9,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-    <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
     <style>
         font.appearance {
             font-family: "Itim", serif;
         }
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -36,11 +43,11 @@
 <body class="font.appearance">
     <!-- Header Section -->
     <header>
-        <nav class="mx-auto">
+        <nav class="mx-auto sora-font">
             <div class="navbar bg-base-100 bg-pet-primary-bg">
                 <div class="navbar-start">
                     <img src="c1-assets/logo-header.png" class="size-7 ml-5" alt="">
-                    <a class="font-bold text-xl ml-3 hidden lg:flex">Browse<span
+                    <a class="font-medium text-xl ml-3 hidden lg:flex">Browse<span
                             class="text-pet-primary">4</span>Pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
@@ -90,7 +97,7 @@
 
         <!-- banner section -->
         <div class="px-10 flex flex-col">
-            <div class="mt-5">
+            <div class="mt-12">
                 <h1 class="text-4xl font-bold itim-regular">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h1>
                 <p class="py-6">
                     Discover a world of treats,toys, and essentials handpicked for <br> your furry friends. Shop now and
@@ -105,8 +112,241 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="px-10 itim-regular pb-10 -mt-20">
+        <section>
+            <!-- Card Container -->
+            <h1 class="text-3xl pb-10 font-bold">Browse By Categories</h1>
+            <div class="grid grid-cols-2 lg:grid-cols-6 gap-3 ">
+                <!-- Card-1 -->
+                <div class="card bg-[#F9DF8A] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/dog-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Dog</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- Card-2 -->
+                <div class="card bg-[#F9DF8A] shadow-lg">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/fish-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Fish</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- Card-3 -->
+                <div class="card bg-[#F9DF8A] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/mouse-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Mouse</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- Card-4 -->
+                <div class="card bg-[#F9DF8A] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/bird-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Bird</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- Card-5 -->
+                <div class="card bg-[#F9DF8A] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/cat-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Cat</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+                <!-- Card-6 -->
+                <div class="card bg-[#F9DF8A] shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="c1-assets/rabbit-cartoon.png" alt="Shoes" class="rounded-full p-8 bg-white" />
+                    </figure>
+                    <div class="card-body items-center text-center pl-5">
+                        <h2 class="card-title">Rabit</h2>
+                        <p>3 items</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- card-hard-section -->
+        <section class="bg-[#FFF9F4] lg:p-10 mt-20">
+            <div>
+                <h2 class="text-3xl font-bold mb-5">Trending Pet Products</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 ">
+                <div class="card bg-[#F9DF8A] shadow-xl w-96 relative left-4 md:right-1">
+                    <div class="card-body">
+                        <h2 class="card-title font-bold text-3xl">T- Shirt For Dogs</h2>
+                        <p class="sora-font">Discover a world of treats, toys, and essentials handpicked for </p>
+                    </div>
+                    <div class="card-actions sora-font">
+                        <button class="btn bg-white text-black justify-center relative left-10">Shop Now</button>
+                    </div>
+                    <figure>
+                        <img src="c1-assets/cute-pet-mid.png" alt="Movie"
+                            class="w-2/4 relative left-20" />
+                    </figure>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3">
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/dog-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/fish-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/bird-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/rabbit-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/bird-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/pet-couch.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/fish-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around flex">
+                        <div>
+                            <img src="c1-assets/pet-couch.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <div class=" bg-white rounded-lg justify-around hidden md:flex">
+                        <div>
+                            <img src="c1-assets/rabbit-cartoon.png" alt=""
+                                class="bg-[#FFF9F4] p-3 mt-8">
+                        </div>
+                        <div class="mt-8 ">
+                            <i class="fa-regular fa-star"></i>
+                            <div class="flex rating">
+                                <input type="radio" name="rating-2"
+                                    class="mask mask-star-2 size-4 mr-2 bg-orange-400" />
+                                <small> 4.5</small>
+                            </div>
+                            <h1>Pet Bed</h1>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
     </main>
     <footer>
 
